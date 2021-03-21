@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <aside id="side">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Menu1</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu2</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu3</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu4</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="contents">
+            <section id="slide">
+                <h2>이미지 슬라이드</h2>
+            </section>
+            <section id="content" class="clearfix">
+                <div class="cont1">공지사항</div>
+                <div class="cont2">갤러리</div>
+                <div class="cont3">팝업</div>
+            </section>
+            <footer id="footer">
+                <div class="foot1">로고</div>
+                <div class="foot2">하단 메뉴</div>
+                <div class="foot3">Copyright</div>
+            </footer>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").hover(function () {
+            $(this).find(".submenu").stop().slideDown();
+        }, function () {
+            $(this).find(".submenu").stop().slideUp();
+        });
+    </script>
+</body>
+
+</html>
