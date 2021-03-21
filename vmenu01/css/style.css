@@ -10,28 +10,31 @@ table {border-spacing: 0;}
 .clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
 
 #wrap {width: 1200px; margin: 0px auto;}
+#side {width: 300px; float: left;}
+#contents {width: 900px; float: left;}
 
 /* header */
-#aside {text-align: center;}
-#aside .logo {width: 300px; height: 150px; line-height: 150px; background: #d1c4e9;}
-#aside .nav {width: 300px; height: 700px; background: #b7a8d4;}
-#aside .nav li {text-align: center; background: #b39ddb;}
-#aside .nav li a {display: block; padding: 10px; color: #fff; background: rgba(0,0,0,0.3);}
-#aside .nav li a:hover {background: rgba(0,0,0,0.4);}
-#aside .nav ul li ul.submenu {display: none;}
+#side {text-align: center;}
+#side .logo {width: 300px; height: 150px; line-height: 150px; background: #d1c4e9;}
+#side .nav {width: 300px; height: 600px; background: #b7a8d4;}
+#side .nav li {text-align: center; background: #b39ddb;}
+#side .nav li a {display: block; padding: 10px; color: #fff; background: rgba(0,0,0,0.3);}
+#side .nav li a:hover {background: rgba(0,0,0,0.4);}
+#side .nav ul li ul.submenu {display: none;}
+#side .nav ul li ul.submenu a:hover {background: rgba(0,0,0,0.2);}
 
 /* slide */
-#slide {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}
+#contents #slide {width: 900px; text-align: center; height: 450px; line-height: 450px; background: #9575cd;}
 
 /* contents */
-#contents {text-align: center;}
-#contents > div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
-#contents > div.cont1 {background: #7e57c2;}
-#contents > div.cont2 {background: #673ab7;}
-#contents > div.cont3 {background: #5e35b1 ;}
+#contents #content {width: 900px;}
+#contents #content > div {float: left; width: 33.333333%; height: 300px; line-height: 300px;text-align: center;}
+#contents #content > div.cont1 {background: #7e57c2;}
+#contents #content > div.cont2 {background: #673ab7;}
+#contents #content > div.cont3 {background: #5e35b1 ;}
 
 /* footer */
-#footer {height: 100px; line-height: 100px; text-align: center; }
-#footer .foot1 {float: left; width: 200px; background: #5e35b1;}
-#footer .foot2 {float: left; width: 800px; background: #512da8;}
-#footer .foot3 {float: left; width: 200px; background: #4527a0;}
+#contents #footer {width: 900px; text-align: center; }
+#contents #footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #5e35b1;}
+#contents #footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #512da8;}
+#contents #footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #4527a0;}
