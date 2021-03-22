@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">탑</a>
+                        <ul class="submenu">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아우터</a>
+                        <ul class="submenu">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">팬츠</a>
+                        <ul class="submenu">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세사리</a>
+                        <ul class="submenu">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="slide">
+            <h2>이미지 슬라이드</h2>
+        </section>
+        <section id="contents">
+            <div class="cont1">
+                <div class="tab-menu">
+                    <div class="tab-btn">
+                        <ul class="clearfix">
+                            <li class="active"><a href="#">공지사항</a></li>
+                            <li><a href="#">갤러리</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <ul>
+                            <li>탭 메뉴 1111 0000</li>
+                            <li>탭 메뉴 1111 0000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2">배너</div>
+            <div class="cont3">바로가기</div>
+        </section>
+        <footer id="footer">
+            <div class="foot1">로고</div>
+            <div class="foot2">Copyright</div>
+            <div class="foot3">SNS</div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown(200);
+        });
+        $(".nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp(200);
+        });
+    </script>
+</body>
+
+</html>
