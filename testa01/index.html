@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <title>JUST 쇼핑몰</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <div id="wrap">
-        <header id="header" class="clearfix">
-            <h1 class="logo">로고</h1>
+        <header class="header" class="clearfix">
+            <h1 class="logo"><a href="#"><img src="images/logo.png" alt="로고"></a></h1>
             <nav class="nav">
                 <ul class="clearfix">
                     <li><a href="#">탑</a>
@@ -48,44 +50,81 @@
                 </ul>
             </nav>
         </header>
-        <section id="slide">
-            <h2>이미지 슬라이드</h2>
-        </section>
-        <section id="contents">
+        <div class="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지 슬라이드1</h2><img src="images/ban01.jpg" alt="이미지1">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지 슬라이드2</h2><img src="images/ban02.jpg" alt="이미지2">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지 슬라이드3</h2><img src="images/ban03.jpg" alt="이미지3">
+                </div>
+            </div>
+        </div>
+        <div class="contents" class="clearfix">
             <div class="cont1">
                 <div class="tab-menu">
                     <div class="tab-btn">
-                        <ul class="clearfix">
+                        <ul>
                             <li class="active"><a href="#">공지사항</a></li>
                             <li><a href="#">갤러리</a></li>
                         </ul>
                     </div>
                     <div class="tab-cont">
-                        <ul>
-                            <li>탭 메뉴 1111 0000</li>
-                            <li>탭 메뉴 1111 0000</li>
-                        </ul>
+                        <div class="notice">
+                            <ul>
+                                <li class="layerPopup"><a href="#">이벤트 당첨자 발표입니다. <span>2021.03.05</span> </a></li>
+                                <li><a href="#">새단장 이벤트를 실시합니다. <span>2021.03.05</span></a></li>
+                                <li><a href="#">새로운 웹 사이트 입니다. <span>2021.03.05</span></a></li>
+                                <li><a href="#">이벤트 당첨자 발표입니다. <span>2021.03.05</span></a></li>
+                                <li><a href="#">새단장 이벤트를 실시합니다. <span>2021.03.05</span></a></li>
+                                <li><a href="#">새로운 웹 사이트 입니다. <span>2021.03.05</span></a></li>
+                                <li><a href="#">새로운 웹 사이트 입니다. <span>2021.03.05</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="gallery">
+                            <ul>
+                                <li><a href="#"><img src="images/gal1.jpg" alt="갤러리1"></a></li>
+                                <li><a href="#"><img src="images/gal2.jpg" alt="갤러리2"></a></li>
+                                <li><a href="#"><img src="images/gal3.jpg" alt="갤러리3"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cont2">배너</div>
-            <div class="cont3">바로가기</div>
-        </section>
-        <footer id="footer">
-            <div class="foot1">로고</div>
-            <div class="foot2">Copyright</div>
-            <div class="foot3">SNS</div>
+            <div class="cont2">
+                <div class="ban">
+                    <a href="#">배너</a>
+                </div>
+            </div>
+            <div class="cont3">
+                <div class="go">
+                    <a href="#">바로가기</a>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="foot1"><a href="#"><img src="images/logo_g.png" alt="바닥로고"></a></div>
+            <div class="foot2"><p>COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED</p></div>
+            <div class="foot3"><ul>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">트위터</a></li>
+                <li><a href="#">페이스북</a></li>
+            </ul></div>
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(".nav > ul > li").mouseover(function(){
-            $(this).find(".submenu").stop().slideDown(200);
-        });
-        $(".nav > ul > li").mouseout(function(){
-            $(this).find(".submenu").stop().slideUp(200);
-        });
-    </script>
+    <div class="layer-bg"></div>
+    <div class="layer">
+        <h2>신상품 안내</h2>
+        <p>안녕하세요, 고객님들.<br>
+            이번 시즌을 맞아해서 신상품이 업로드가 되었습니다.<br>
+            작년도부터 폭발적으로 문의가 많이 왔었던 "플라워 블라우스"와 "프릴 스커트"가 리뉴얼되어서 입고 되었습니다.<br>
+            고객님들의 의견을 항상 긍정적으로 받아들이고 최대한 반영하도록 하는 JUST쇼핑몰입니다.</p>
+        <a href="#" class="close">x 닫기</a>
+    </div>
 </body>
 
 </html>

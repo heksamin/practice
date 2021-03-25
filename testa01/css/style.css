@@ -2,29 +2,67 @@
 * {margin: 0; padding: 0;}
 ul {list-style: none;}
 a {text-decoration: none; color: #333333;}
+img {vertical-align: top;border: 0;}
 .clearfix::before, .clearfix::after {content: ""; display: block; clear: both;}
 
 #wrap {width: 1200px; margin: 0 auto;}
-#header {height: 100px; text-align: center;background:rgb(145, 166, 228);}
-#slide {height: 300px;text-align: center; background:rgb(112, 141, 228);line-height: 300px;}
-#contents {height: 200px;text-align: center;}
-#footer {height: 100px;text-align: center;}
+.header {height: 100px; text-align: center;}
+.banner {height: 300px;text-align: center;overflow:hidden;}
+.contents {height: 200px;text-align: center;}
+.footer {height: 100px;text-align: center;}
 
-#header .logo {float: left;width: 200px;padding-top: 25px;}
-#header .nav {float: right; width: 700px;text-align: center;padding-top: 30px;}
-#header .nav > ul {width: 100%;}
-#header .nav > ul > li {position: relative; float: left;width: 25%;background:cyan;}
-#header .nav > ul > li > a {display: block;width: 100%;height: 40px;line-height: 40px;}
-#header .nav > ul > li > ul.submenu {width: 100%;height: 160px; line-height: 40px;position: absolute; left:0; top: 40px;}
-#header .nav > ul > li > ul.submenu > li {float: left;width: 100%;background:rgb(75, 160, 160);}
-#header .nav > ul > li > ul.submenu > li > a {display: block; width: 100%; }
-#header .nav > ul > li > ul.submenu > li:hover {background:rgb(72, 153, 219);}
+.header .logo {float: left;width: 200px;padding-top: 30px;}
+.header .nav {float: right; width: 700px;text-align: center;padding-top: 30px;z-index: 300;}
+.header .nav > ul {width: 100%;}
+.header .nav > ul > li {position: relative; float: left;width: 25%;background:cyan;}
+.header .nav > ul > li > a {display: block;width: 100%;height: 40px;line-height: 40px;}
+.header .nav > ul > li > ul.submenu {display:none;width: 100%;height: 160px; line-height: 40px;position: absolute; left:0; top: 40px;z-index:300;}
+.header .nav > ul > li > ul.submenu > li {float: left;width: 100%;background:rgb(75, 160, 160);}
+.header .nav > ul > li > ul.submenu > li > a {display: block; width: 100%; }
+.header .nav > ul > li > ul.submenu > li:hover {background:rgb(72, 153, 219);}
 
-#contents > div {width: 33.333333%;height: 200px;}
-#contents .cont1 {float: left;background:steelblue;}
-#contents .cont2 {float: left;background:rgb(72, 153, 219);line-height: 200px;}
-#contents .cont3 {float: left;background:rgb(66, 165, 247);line-height: 200px;}
+.slideList {position: relative;width: 1200px; height: 300px;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {position: absolute; left: 45%; top: 50%;transform:translate(-50px, -50px);padding:5px 20px; background: rgba(225, 225, 225, 0.5);border-radius: 10px;}
+.slideList .slideImg img {display: block;}
 
-#footer .foot1 {float: left; width: 200px;height: 100px;line-height: 100px;background:royalblue;}
-#footer .foot2 {float: left; width: 800px;height: 100px;line-height: 800px;background:rgb(31, 56, 133);}
-#footer .foot3 {float: left; width: 200px;height: 100px;line-height: 100px;background:rgb(14, 42, 126);}
+.contents > div {width: 33.333333%;height: 200px;}
+.contents .cont1 {float: left;background:#fff;}
+.contents .cont2 {float: left;line-height: 200px;}
+.contents .cont3 {float: left;background:rgb(66, 165, 247);line-height: 200px;}
+
+.tab-menu .tab-btn ul {overflow: hidden;}
+.tab-menu .tab-btn li {float: left;width: 200px;text-align: center;}
+.tab-menu .tab-btn li.active {text-decoration: underline;background-color: #ccc;color:#333;}
+.tab-menu .tab-btn li a {display: block; padding: 10px; color: #333;}
+
+.tab-menu .tab-cont {height: 159px;background:#ccc;padding: 5px 10px;}
+.tab-menu .tab-cont .notice {text-align: left;}
+.tab-menu .tab-cont .notice li a {font-size: 13px;text-overflow: ellipsis;white-space: nowrap;}
+.tab-menu .tab-cont .notice li a span {float:right;}
+.tab-menu .tab-cont .gallery {position: relative; left:28px; top:25px;}
+.tab-menu .tab-cont .gallery li {width: 100px; height:100px;float:left;padding-right: 12px;}
+.tab-menu .tab-cont .gallery li:last-child {padding-right:0;}
+.tab-menu .tab-cont .gallery ul li a {display: block;cursor: pointer;}
+.tab-menu .tab-cont .gallery ul li a img {width:100%;}
+
+
+.contents .cont2 .ban a {background:rgba(228, 228, 228, 0.849);padding: 10px 30px;}
+.contents .cont2 .ban {background-image: url(../images/banner_zone.jpg);background-size: 100%; background-repeat: no-repeat;}
+.contents .cont3 .go a {background:rgba(228, 228, 228, 0.849);padding: 10px 30px;}
+.contents .cont3 .go {background-image: url(../images/banner_zone.jpg);background-size: 100%; background-repeat: no-repeat;}
+
+.footer .foot1 {float: left; width: 200px;height: 100px;line-height: 100px;background:rgb(158, 176, 233);}
+.footer .foot1 a {display:block;padding-top: 30px;}
+.footer .foot2 {float: left; width: 800px;height: 100px;line-height: 100px;background:rgb(31, 56, 133);}
+.footer .foot3 {overflow:hidden;float: left; width: 200px;height: 100px;line-height: 100px;background:rgb(14, 42, 126);}
+.footer .foot2 p {color:#fff;font-size: 13px;}
+.footer .foot3 li {float:left;padding-left: 18px;}
+.footer .foot3 a {color:#fff;font-size: 13px;}
+
+.layer {display: none; position: absolute; left: 50%; top: 50%; margin-left: -250px; margin-top: -280px;width: 500px; height: 300px; background: #fff;}
+.layer h2 {padding: 5px;border-bottom: 1px solid #ccc;}
+.layer p {padding: 10px;} 
+.layer .close {position: absolute; right: 20px;bottom: 20px; border-radius: 5px;display: block;padding: 5px 15px;border: 1px solid #ccc;}
+.layer a:hover {background:#ccc;}
+.layer-bg {display: none;background: rgba(0, 0, 0, 0.205); position: absolute;left: 0; top: 0;width:100%; height: 100%;}
