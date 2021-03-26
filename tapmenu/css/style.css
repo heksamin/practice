@@ -26,9 +26,9 @@ table {border-spacing: 0;}
 /* tab-menu */
 .tab-menu {padding: 10px;}
 .tab-menu .tab-btn ul {overflow: hidden;}
-.tab-menu .tab-btn li {float: left;width: 160px;text-align: center;}
-.tab-menu .tab-btn li.active {text-decoration: underline;}
-.tab-menu .tab-btn li a {display: block; padding: 10px; color: #fff;}
+.tab-menu .tab-btn ul li {float: left;width: 160px;text-align: center;}
+.tab-menu .tab-btn ul li.active {text-decoration: underline;}
+.tab-menu .tab-btn ul li a {float: left; display: block; padding: 10px; color: #fff;}
 .tab-menu .tab-cont {background: #512da8; text-align: left;}
 
 /* footer */
