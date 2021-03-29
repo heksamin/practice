@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>유진건설</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="script/script.js">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo"><a href="#"><img src="images/logo.png" alt="로고"></a></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">조직구성도</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">사업영역</a>
+                        <ul class="submenu">
+                            <li><a href="#">전원주택</a></li>
+                            <li><a href="#">도시재생</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">입주정보</a>
+                        <ul class="submenu">
+                            <li><a href="#">입주단지</a></li>
+                            <li><a href="#">입주캘린더</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">공시사항</a></li>
+                            <li><a href="#">건축상담</a></li>
+                            <li><a href="#">홍보자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지1</h2>
+                    <img src="images/ban01.jpg" alt="이미지1">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지2</h2>
+                    <img src="images/ban02.jpg" alt="이미지2">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지3</h2>
+                    <img src="images/ban03.jpg" alt="이미지3">
+                </div>
+            </div>
+        </div>
+        <div id="content" class="clearfix">
+            <div class="tabmenu">
+                <div class="tab-btn">
+                    <ul>
+                        <li class="active"><a href="#">공지사항</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                </div>
+                <div class="tab-cont">
+                    <div class="notice">
+                        <ul class="title">
+                            <li class="layerPopup"><a href="#">사이트 새단장 이벤트</a></li>
+                            <li><a href="#">사이트 새단장 이벤트</a></li>
+                            <li><a href="#">사이트 새단장 이벤트</a></li>
+                            <li><a href="#">사이트 새단장 이벤트</a></li>
+                            <li><a href="#">사이트 새단장 이벤트</a></li>
+                            <li><a href="#">사이트 새단장 이벤트</a></li>
+                            <li><a href="#">사이트 새단장 이벤트</a></li>
+                        </ul>
+                        <ul class="date">
+                            <li>2021.03.09</li>
+                            <li>2021.03.09</li>
+                            <li>2021.03.09</li>
+                            <li>2021.03.09</li>
+                            <li>2021.03.09</li>
+                            <li>2021.03.09</li>
+                            <li>2021.03.09</li>
+                        </ul>
+                    </div>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="images/gal1.jpg" alt="갤러리1"></a></li>
+                            <li><a href="#"><img src="images/gal2.jpg" alt="갤러리2"></a></li>
+                            <li><a href="#"><img src="images/gal3.jpg" alt="갤러리3"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="ban">
+                    <a href="#">배너</a>
+                </div>
+            </div>
+            <div class="direct">
+                <div class="dir">
+                    <a href="#">바로가기</a>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footGroup">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">전체서비스</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED
+                </div>
+            </div>
+            <div class="footfamily">
+                <select name="familySite">
+                    <option value="familySite1">패밀리사이트1</option>
+                    <option value="familySite2">패밀리사이트2</option>
+                    <option value="familySite3">패밀리사이트3</option>
+                </select>
+            </div>
+        </footer>
+        <div id="layer">
+            <h3>타이틀</h3>
+            <p>윤동주 시인의 시집 <하늘과 바람과 별과 詩> 출간
+                    72주년을 맞이하여 천문대에서 개최하는 사생대회가 열립니다.
+                    별 하나에 추억, 사랑, 쓸쓸함, 동경 그리고 시와, 어머니를 그렸던
+                    시인처럼 별같은 마음을 가진 분들은 참여해주세요.</p>
+            <a href="#" class="close">닫기</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function () {
+            $(".nav > ul > li > ul").show();
+        });
+        $(".nav > ul > li").mouseleave(function () {
+            $(".nav > ul > li > ul").hide();
+        });
+
+        $(".slideList").children("div:gt(0)").hide();
+        var current = 0;
+        setInterval(function () {
+            var next = (current + 1) % 3;
+            $(".slideList").find("div").eq(current).fadeOut();
+            $(".slideList").find("div").eq(next).fadeIn();
+            current = next;
+        }, 3000);
+
+        $(".layerPopup").click(function () {
+            $("#layer").css("display", "block");
+        });
+        $("#layer .close").click(function () {
+            $("#layer").css("display", "none");
+        });
+
+        var tabBtn = $(".tab-btn > ul > li");
+        var tabCont = $(".tab-cont > div");
+        tabCont.hide().eq(0).show();
+        tabBtn.click(function (e) {
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            tabBtn.removeClass("active");
+            target.addClass("active");
+            tabCont.css("display", "none");
+            tabCont.eq(index).css("display", "block");
+        });
+    </script>
+</body>
+
+</html>
