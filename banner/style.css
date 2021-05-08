@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+/*layout*/
+body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color:#4e4e4e; line-height: 1.4;}
+.wrap {width: 100%; min-width: 1100px;}
+
+section.premium {background: url(../concierge/img/con2_bg.jpg); height: 1029px; width: 100%; overflow: hidden;}
+section.premium .inner {position: relative; padding-top: 300px; margin: 0 20px;}
+section.premium .txtImg {position: absolute; left: 0; top: 35%; display: block; width: 100%;}
+section.premium .title {padding-left: 80px;}
+section.premium .title h2 {font-size: 30px; margin-bottom: 20px;}
+section.premium .title p {font-size: 19px; line-height: 1.6; margin-bottom: 30px;}
+section.premium .title a {font-size: 24px; display: inline-block; position: relative;}
+section.premium .title a::before {content: ''; width: 80px; height: 15px; background: rgba(41, 41, 41, 0.411); position: absolute; bottom: 0; transition: all 0.3s;}
+section.premium .title a:hover::before, section.premium .title a:focus::before {width: 0%;}
+section.premium .banner {width: 63%; height: 800px; position: absolute; right: 0; top: 50px;}
+section.premium .banner ul {width: 100%; height: 100%; position: relative;}
+section.premium .banner li {position: absolute; z-index: 2;}
+section.premium .banner li img {width: 100%;}
+section.premium .banner li:nth-child(1) {left: 10%; top: 10%;}
+section.premium .banner li:nth-child(2) {left: 0%; top: 50%;}
+section.premium .banner li:nth-child(3) {left: 29%; top: 65%;}
+section.premium .banner li:nth-child(1), section.premium .banner li:nth-child(2), section.premium .banner li:nth-child(3) {width: 25.5%;} 
+section.premium .banner li:nth-child(4) {width:53.1%; right: 0%; min-width: 500px;}
+section.premium .inner .banner .bgbox {position: absolute; background: #f6f5f4; width: 36%;}
+section.premium .inner .banner .bg1 {height: 35%;  top: 60%; left: -5%;}
+section.premium .inner .banner .bg2 {height: 60%;  top: -3%; right: -2%;}
