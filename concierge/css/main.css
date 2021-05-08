@@ -106,21 +106,24 @@ section.about .inner ul li:nth-child(2) {animation-name: slid-up2; animation-dur
 section.about .inner ul li:nth-child(3) {animation-name: slid-up2; animation-duration: 3.2s;}
 
 /*premium*/
-section.premium {background: url(../img/main/con2_bg.jpg);height: 1029px;width: 100%; overflow: hidden; margin: 40px auto 80px; padding: 100px 0; box-sizing: border-box; position: relative;}
-section.premium .innner {position: relative; padding-top: 300px; width: 1760px; margin: 0 auto;}
-section.premium .txtImg {position: absolute; left: 0; top: 20%; display: block; width: 100%;}
-section.premium .title {position: absolute; left: 8%; top: 35%;}
+section.premium {background: url(../img/main/con2_bg.jpg); height: 1029px; width: 100%; overflow: hidden;}
+section.premium .inner {position: relative; padding-top: 300px; margin: 0 20px;}
+section.premium .txtImg {position: absolute; left: 0; top: 35%; display: block; width: 100%;}
+section.premium .title {padding-left: 80px;}
 section.premium .title h2 {font-size: 30px; margin-bottom: 20px;}
 section.premium .title p {font-size: 19px; line-height: 1.6; margin-bottom: 30px;}
 section.premium .title a {font-size: 24px; display: inline-block; position: relative;}
 section.premium .title a::before {content: ''; width: 80px; height: 15px; background: rgba(41, 41, 41, 0.411); position: absolute; bottom: 0; transition: all 0.3s;}
 section.premium .title a:hover::before, section.premium .title a:focus::before {width: 0%;}
-section.premium .banner {width: 63%;height: 800px;position: absolute;right: 0;top: 50px;}
+section.premium .banner {width: 63%; height: 800px; position: absolute; right: 0; top: 50px;}
 section.premium .banner ul {width: 100%; height: 100%; position: relative;}
-section.premium .banner li {width: 63%;height: 800px;position: absolute;right: 0;top: 50px;}
+section.premium .banner li {position: absolute; z-index: 2;}
 section.premium .banner li img {width: 100%;}
-section.premium .banner li:nth-child(1) {left: 45%; top: 15%;}
-section.premium .banner li:nth-child(2) {left: 37%; top: 50%;}
-section.premium .banner li:nth-child(3) {left: 55%; top: 62%;}
-section.premium .banner li:nth-child(4) {right: 45%; width: 32%; min-width: 500px;}
-section.premium .banner {width: 63%;height: 800px;position: absolute;right: 0;top: 50px;}
+section.premium .banner li:nth-child(1) {left: 10%; top: 10%;}
+section.premium .banner li:nth-child(2) {left: 0%; top: 50%;}
+section.premium .banner li:nth-child(3) {left: 29%; top: 65%;}
+section.premium .banner li:nth-child(1), section.premium .banner li:nth-child(2), section.premium .banner li:nth-child(3) {width: 25.5%;} 
+section.premium .banner li:nth-child(4) {width:53.1%; right: 0%; min-width: 500px;}
+section.premium .inner .banner .bgbox {position: absolute; background: #f6f5f4; width: 36%;}
+section.premium .inner .banner .bg1 {height: 35%;  top: 60%; left: -5%;}
+section.premium .inner .banner .bg2 {height: 60%;  top: -3%; right: -2%;}
